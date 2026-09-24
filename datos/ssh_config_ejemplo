@@ -1,0 +1,28 @@
+# ~/.ssh/config de PRÁCTICA (lado CLIENTE) · Clase 11
+# Copialo a tu ~/.ssh/config (permiso 600) y adaptá los valores a tu laboratorio.
+
+Host *
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+    HashKnownHosts yes
+
+Host demo
+    HostName 10.0.2.31
+    User soporte
+    Port 22
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+
+Host bastion
+    HostName 10.0.10.4
+    User sre
+    Port 2222
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+
+# Saltar por el bastión para llegar a una máquina sin IP pública:
+Host interna
+    HostName 10.0.20.15
+    User sre
+    ProxyJump bastion
+    IdentityFile ~/.ssh/id_ed25519

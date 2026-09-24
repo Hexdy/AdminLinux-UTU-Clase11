@@ -1,0 +1,50 @@
+===============================================================
+  MISIÓN — Guardia en bastion01  ·  AdminLinux Clase 11 (SSH)
+===============================================================
+Estación : {{ ansible_hostname }}
+Distro   : {{ ansible_distribution }} {{ ansible_distribution_version | default('') }} ({{ ansible_os_family }})
+Gestor   : {{ 'apt' if ansible_os_family == 'Debian' else ('pacman' if ansible_os_family == 'Archlinux' else 'dnf') }}
+Cliente  : {{ 'openssh-client' if ansible_os_family == 'Debian' else ('openssh' if ansible_os_family == 'Archlinux' else 'openssh-clients') }}
+Usuario  : {{ ansible_user_id }}
+
+Entrás de guardia. El equipo de la noche dejó en esta carpeta la evidencia de
+bastion01 tal cual estaba a las 08:05:
+
+  - auth_reto.log              volcado de  journalctl -u ssh  (una noche entera)
+  - sshd_config                el archivo principal del servidor
+  - sshd_config.d/99-lab.conf  un drop-in que "iba a ser por 5 minutos"
+  - nota_equipo.txt            lo que te dejaron escrito (leelo, tiene trampa)
+
+Tu jefa te pide 3 respuestas. Sacalas con lo de esta clase y con pipes/grep/awk
+de las clases 2 a 4. NADA a ojo:
+
+  R1) Contra QUE USUARIO se hicieron mas intentos FALLIDOS de contrasena.
+      (el nombre del usuario, tal cual aparece)
+
+  R2) Desde QUE IP salieron mas intentos FALLIDOS.
+      (la direccion IP, tal cual aparece)
+
+  R3) Mirando la config REAL que quedo activa: cual es la directiva que permite
+      entrar SIN contrasena. (escribila tal cual, respetando las mayusculas;
+      solo el nombre de la directiva, sin el valor)
+
+Con las 3 respuestas arma la bandera, con este formato EXACTO:
+
+      BANDERA{<usuario>-<ip>-<Directiva>}
+
+Verificala con Ansible (no adivines: el playbook te dice si esta bien):
+
+      ansible-playbook comprobar_bandera.yml -e "bandera=BANDERA{...}"
+
+Pistas (sin darte el comando hecho):
+  - Los intentos fallidos no son los aceptados. Filtra por el texto correcto.
+  - CUIDADO: hay DOS formatos de linea de fallo. Una dice "for <usuario> from
+    <ip>" y la otra "for invalid user <usuario> from <ip>". El campo numero N
+    NO cae en el mismo lugar en las dos. Si contas con $9 a lo bruto te va a
+    dar un resultado plausible... y equivocado. Normaliza antes de contar.
+  - Para contar y ordenar: pipes + sort + uniq -c + sort -rn, o un array de awk.
+  - Para R3: en sshd_config gana la PRIMERA aparicion de cada directiva, y el
+    Include esta arriba de todo. Preguntate que archivo gana de verdad.
+  - Verifica antes de confiar: proba tu comando con head sobre unas pocas
+    lineas y mira si lo que sale tiene sentido.
+===============================================================

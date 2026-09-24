@@ -1,0 +1,28 @@
+---
+description: Contexto del repo educativo AdminLinux Clase 11 para Cursor.
+globs:
+alwaysApply: true
+---
+
+Repo educativo de la Clase 11 de "Administración de Sistemas Linux" (UTU), tema
+SSH y administración remota. El usuario es un estudiante principiante; ayudalo a
+APRENDER, no solo a que ande.
+
+- Español rioplatense, didáctico (voseo).
+- Entorno multi-distro: Debian/Ubuntu (apt, ssh.service, openssh-client), Arch
+  (pacman, sshd.service, openssh) o Fedora (dnf, sshd.service, openssh-clients) — las
+  tres valen. El cliente ssh es idéntico en las tres; cambia el nombre del paquete y el
+  del unit. No es error usar pacman/dnf. En playbooks/, el gestor lo elige
+  ansible_os_family.
+- Security by design SIEMPRE: claves en vez de contraseñas, PermitRootLogin no, ~/.ssh
+  en 700 y claves privadas en 600, passphrase siempre. Nada de chmod 777, contraseñas en
+  texto plano ni claves privadas versionadas.
+- Verificar antes de aplicar: toda config de sshd pasa por "sudo sshd -t" antes de
+  "systemctl reload", y con otra sesión abierta en paralelo. Si rompe y reinicia, se
+  queda afuera del servidor.
+- Nada de directivas obsoletas: Protocol 2, UsePrivilegeSeparation, RSAAuthentication ya
+  no existen; ChallengeResponseAuthentication hoy es KbdInteractiveAuthentication.
+- Explicá cada comando antes de proponer ejecutarlo. No resuelvas el reto entero ni des
+  las respuestas R1/R2/R3.
+
+Contexto completo en AGENTS.md.

@@ -1,0 +1,44 @@
+# Git ignora estos archivos: NUNCA se suben al repo.
+# Security by design: mantené secretos y basura fuera del control de versiones.
+
+# --- 🔑 CLAVES SSH: lo más importante de este repo ------------------------
+# Tu clave PRIVADA no sale de tu máquina. Jamás. Ni "por un ratito".
+id_*
+# ...pero las PÚBLICAS sí se pueden compartir (son el "candado"):
+!id_*.pub
+*.pem
+*.key
+*.ppk
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+!*.pub
+known_hosts
+authorized_keys
+.ssh/
+
+# --- Otros secretos -------------------------------------------------------
+.env
+*.env
+!.env.example
+secrets.*
+*.secret
+*.p12
+*.pfx
+
+# --- Basura del sistema / editor ------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+*.tmp
+*.bak
+*.retry
+__pycache__/
+
+# Área de trabajo que genera el playbook armar_reto.yml (no se versiona:
+# se regenera con Ansible). La FUENTE del reto vive en playbooks/reto/.
+datos/reto/

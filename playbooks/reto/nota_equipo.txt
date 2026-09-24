@@ -1,0 +1,18 @@
+El equipo te deja esta nota:
+
+  "Bienvenido/a a la guardia. Anoche bastion01 comio escaneos toda la
+   madrugada y esta manana descubrimos que la configuracion del servidor no
+   es la que creiamos. Te dejamos el volcado de journalctl -u ssh y los dos
+   archivos de configuracion tal como estaban a las 08:05.
+
+   Hace el analisis con grep/awk/pipes como corresponde, no a ojo.
+
+   Un companero te va a decir 'de memoria' que la bandera era
+   BANDERA{admin-203.0.113.77-PasswordAuthentication}. NO le creas: conto los
+   usuarios con el campo equivocado y agarro la IP del que mas RUIDO hizo, no
+   la del que mas INTENTOS fallidos hizo. Saca vos los numeros y verifica con
+   el playbook. Se verifica antes de confiar: vale igual para lo que te
+   sugiera una IA."
+
+Esta nota quedo en 0600 (solo la lee su dueno) a proposito: asi se maneja un
+archivo con algo de valor. Security by design, desde el primer dia.

@@ -1,0 +1,53 @@
+---
+# comprobar_bandera.yml — ¿tu bandera es la correcta?
+#
+# SECURITY BY DESIGN: el repo NO guarda la bandera en texto plano. Guarda solo su
+# huella SHA-256 en  secretos/bandera.sha256. Este playbook calcula la huella de
+# LO QUE VOS PASÁS y la compara con la esperada. Si coinciden, la bandera es válida.
+# Es la misma idea con la que el servidor SSH guarda las contraseñas: nunca el
+# secreto, solo su hash (para contraseñas de verdad, además, se usa hashing lento
+# con sal: bcrypt/argon2/yescrypt).
+#
+# Uso:
+#   ansible-playbook comprobar_bandera.yml -e "bandera=BANDERA{...}"
+#
+# Ejemplo de FORMATO (no es la respuesta):
+#   ansible-playbook comprobar_bandera.yml -e "bandera=BANDERA{usuario-192.0.2.1-Directiva}"
+
+- name: Verificar la bandera del reto (por hash, sin exponer el secreto)
+  hosts: local
+  become: false
+  gather_facts: false
+
+  vars:
+    bandera: ""   # la pasás con  -e "bandera=BANDERA{...}"
+
+  tasks:
+    - name: Necesito que me pases una bandera
+      ansible.builtin.assert:
+        that:
+          - bandera | length > 0
+        fail_msg: >-
+          Pasame tu bandera así:
+          ansible-playbook comprobar_bandera.yml -e "bandera=BANDERA{...}"
+        quiet: true
+
+    - name: Leer la huella esperada (solo el hash vive en el repo)
+      ansible.builtin.set_fact:
+        hash_esperado: "{{ lookup('file', playbook_dir + '/secretos/bandera.sha256') | trim }}"
+
+    - name: Comparar la huella de tu bandera con la esperada
+      ansible.builtin.assert:
+        that:
+          - (bandera | trim | hash('sha256')) == hash_esperado
+        fail_msg: >-
+          ❌ Esa no es. Repasá: ¿contaste los intentos FALLIDOS (no los aceptados)?
+          ¿el usuario y la IP salen del MISMO tipo de línea? ¿mirás la directiva que
+          realmente quedó activa (ojo con el Include) y la escribís tal cual, con sus
+          mayúsculas? ¿el separador es '-' y no hay espacios?
+        success_msg: "✅ ¡BANDERA CORRECTA! Leíste el log y la config como se debe. 🎉"
+        quiet: true
+
+    - name: Trofeo
+      ansible.builtin.debug:
+        msg: "🏁 {{ bandera | trim }} — capturada con grep/awk y verificada con Ansible. Ahora decísela al profe."

@@ -1,0 +1,47 @@
+# /etc/ssh/sshd_config  ·  bastion01  ·  volcado del 2026-09-19 08:05 -0300
+#
+# OJO: lo que vale es la PRIMERA aparición de cada directiva. Como el Include
+# está arriba de todo, lo que venga en sshd_config.d/ gana sobre este archivo.
+
+Include /etc/ssh/sshd_config.d/*.conf
+
+Port 22
+#Port 2222
+AddressFamily any
+ListenAddress 0.0.0.0
+
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+
+# --- Autenticacion -------------------------------------------------------
+LoginGraceTime 600
+PermitRootLogin prohibit-password
+StrictModes yes
+MaxAuthTries 12
+MaxSessions 10
+
+PubkeyAuthentication yes
+AuthorizedKeysFile .ssh/authorized_keys
+
+PasswordAuthentication yes
+PermitEmptyPasswords no
+KbdInteractiveAuthentication no
+UsePAM yes
+
+# --- Reenvios ------------------------------------------------------------
+AllowAgentForwarding yes
+AllowTcpForwarding yes
+GatewayPorts no
+X11Forwarding yes
+PermitTunnel no
+
+# --- Sesion --------------------------------------------------------------
+ClientAliveInterval 0
+ClientAliveCountMax 3
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem sftp /usr/lib/openssh/sftp-server
+
+# --- Quien puede entrar --------------------------------------------------
+#AllowGroups sshusers
+#AllowUsers sre ulyses

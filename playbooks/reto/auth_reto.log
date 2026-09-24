@@ -1,0 +1,189 @@
+2026-09-19T02:04:11-0300 bastion01 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+2026-09-19T02:04:11-0300 bastion01 sshd[812]: Server listening on 0.0.0.0 port 22.
+2026-09-19T02:04:11-0300 bastion01 sshd[812]: Server listening on :: port 22.
+2026-09-19T02:04:11-0300 bastion01 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+2026-09-19T02:31:09-0300 bastion01 sshd[901]: Accepted publickey for ulyses from 10.0.10.4 port 51002 ssh2: ED25519 SHA256:REDACTADO
+2026-09-19T02:31:09-0300 bastion01 sshd[901]: pam_unix(sshd:session): session opened for user ulyses(uid=1000)
+2026-09-19T02:48:30-0300 bastion01 sshd[901]: pam_unix(sshd:session): session closed for user ulyses
+2026-09-19T03:12:05-0300 bastion01 sshd[3119]: Invalid user admin from 198.51.100.23 port 47581
+2026-09-19T03:12:05-0300 bastion01 sshd[3119]: Failed password for invalid user admin from 198.51.100.23 port 47581 ssh2
+2026-09-19T03:12:12-0300 bastion01 sshd[1557]: Invalid user admin from 198.51.100.23 port 33323
+2026-09-19T03:12:12-0300 bastion01 sshd[1557]: Failed password for invalid user admin from 198.51.100.23 port 33323 ssh2
+2026-09-19T03:12:19-0300 bastion01 sshd[3980]: Invalid user admin from 198.51.100.23 port 52310
+2026-09-19T03:12:19-0300 bastion01 sshd[3980]: Failed password for invalid user admin from 198.51.100.23 port 52310 ssh2
+2026-09-19T03:12:26-0300 bastion01 sshd[5946]: Invalid user admin from 198.51.100.23 port 58287
+2026-09-19T03:12:26-0300 bastion01 sshd[5946]: Failed password for invalid user admin from 198.51.100.23 port 58287 ssh2
+2026-09-19T03:12:33-0300 bastion01 sshd[3710]: Invalid user admin from 198.51.100.23 port 49008
+2026-09-19T03:12:33-0300 bastion01 sshd[3710]: Failed password for invalid user admin from 198.51.100.23 port 49008 ssh2
+2026-09-19T03:12:40-0300 bastion01 sshd[3945]: Invalid user admin from 198.51.100.23 port 47609
+2026-09-19T03:12:40-0300 bastion01 sshd[3945]: Failed password for invalid user admin from 198.51.100.23 port 47609 ssh2
+2026-09-19T03:12:47-0300 bastion01 sshd[4392]: Invalid user admin from 198.51.100.23 port 39256
+2026-09-19T03:12:47-0300 bastion01 sshd[4392]: Failed password for invalid user admin from 198.51.100.23 port 39256 ssh2
+2026-09-19T03:12:54-0300 bastion01 sshd[8203]: Invalid user admin from 198.51.100.23 port 48863
+2026-09-19T03:12:54-0300 bastion01 sshd[8203]: Failed password for invalid user admin from 198.51.100.23 port 48863 ssh2
+2026-09-19T03:13:01-0300 bastion01 sshd[5291]: Invalid user admin from 198.51.100.23 port 57962
+2026-09-19T03:13:01-0300 bastion01 sshd[5291]: Failed password for invalid user admin from 198.51.100.23 port 57962 ssh2
+2026-09-19T03:13:08-0300 bastion01 sshd[1108]: Invalid user admin from 198.51.100.23 port 43132
+2026-09-19T03:13:08-0300 bastion01 sshd[1108]: Failed password for invalid user admin from 198.51.100.23 port 43132 ssh2
+2026-09-19T03:13:15-0300 bastion01 sshd[9006]: Invalid user admin from 198.51.100.23 port 52546
+2026-09-19T03:13:15-0300 bastion01 sshd[9006]: Failed password for invalid user admin from 198.51.100.23 port 52546 ssh2
+2026-09-19T03:13:22-0300 bastion01 sshd[3148]: Invalid user admin from 198.51.100.23 port 44759
+2026-09-19T03:13:22-0300 bastion01 sshd[3148]: Failed password for invalid user admin from 198.51.100.23 port 44759 ssh2
+2026-09-19T03:13:29-0300 bastion01 sshd[4871]: Invalid user admin from 198.51.100.23 port 53342
+2026-09-19T03:13:29-0300 bastion01 sshd[4871]: Failed password for invalid user admin from 198.51.100.23 port 53342 ssh2
+2026-09-19T03:13:36-0300 bastion01 sshd[2157]: Invalid user admin from 198.51.100.23 port 61901
+2026-09-19T03:13:36-0300 bastion01 sshd[2157]: Failed password for invalid user admin from 198.51.100.23 port 61901 ssh2
+2026-09-19T03:13:43-0300 bastion01 sshd[3745]: Invalid user admin from 198.51.100.23 port 37708
+2026-09-19T03:13:43-0300 bastion01 sshd[3745]: Failed password for invalid user admin from 198.51.100.23 port 37708 ssh2
+2026-09-19T03:13:50-0300 bastion01 sshd[4175]: Invalid user admin from 198.51.100.23 port 38226
+2026-09-19T03:13:50-0300 bastion01 sshd[4175]: Failed password for invalid user admin from 198.51.100.23 port 38226 ssh2
+2026-09-19T03:13:57-0300 bastion01 sshd[2559]: Invalid user admin from 198.51.100.23 port 52850
+2026-09-19T03:13:57-0300 bastion01 sshd[2559]: Failed password for invalid user admin from 198.51.100.23 port 52850 ssh2
+2026-09-19T03:14:04-0300 bastion01 sshd[1885]: Invalid user admin from 198.51.100.23 port 36577
+2026-09-19T03:14:04-0300 bastion01 sshd[1885]: Failed password for invalid user admin from 198.51.100.23 port 36577 ssh2
+2026-09-19T03:14:11-0300 bastion01 sshd[1885]: Invalid user test from 198.51.100.23 port 59533
+2026-09-19T03:14:11-0300 bastion01 sshd[1885]: Failed password for invalid user test from 198.51.100.23 port 59533 ssh2
+2026-09-19T03:14:18-0300 bastion01 sshd[5963]: Invalid user test from 198.51.100.23 port 51192
+2026-09-19T03:14:18-0300 bastion01 sshd[5963]: Failed password for invalid user test from 198.51.100.23 port 51192 ssh2
+2026-09-19T03:14:25-0300 bastion01 sshd[5056]: Invalid user test from 198.51.100.23 port 54878
+2026-09-19T03:14:25-0300 bastion01 sshd[5056]: Failed password for invalid user test from 198.51.100.23 port 54878 ssh2
+2026-09-19T03:14:32-0300 bastion01 sshd[4992]: Invalid user test from 198.51.100.23 port 44517
+2026-09-19T03:14:32-0300 bastion01 sshd[4992]: Failed password for invalid user test from 198.51.100.23 port 44517 ssh2
+2026-09-19T03:14:39-0300 bastion01 sshd[9699]: Invalid user test from 198.51.100.23 port 42572
+2026-09-19T03:14:39-0300 bastion01 sshd[9699]: Failed password for invalid user test from 198.51.100.23 port 42572 ssh2
+2026-09-19T03:14:46-0300 bastion01 sshd[2581]: Invalid user test from 198.51.100.23 port 42161
+2026-09-19T03:14:46-0300 bastion01 sshd[2581]: Failed password for invalid user test from 198.51.100.23 port 42161 ssh2
+2026-09-19T03:14:53-0300 bastion01 sshd[4185]: Invalid user test from 198.51.100.23 port 62816
+2026-09-19T03:14:53-0300 bastion01 sshd[4185]: Failed password for invalid user test from 198.51.100.23 port 62816 ssh2
+2026-09-19T03:15:00-0300 bastion01 sshd[3103]: Invalid user test from 198.51.100.23 port 43770
+2026-09-19T03:15:00-0300 bastion01 sshd[3103]: Failed password for invalid user test from 198.51.100.23 port 43770 ssh2
+2026-09-19T03:15:07-0300 bastion01 sshd[3375]: Invalid user test from 198.51.100.23 port 62745
+2026-09-19T03:15:07-0300 bastion01 sshd[3375]: Failed password for invalid user test from 198.51.100.23 port 62745 ssh2
+2026-09-19T03:15:14-0300 bastion01 sshd[5523]: Invalid user test from 198.51.100.23 port 47902
+2026-09-19T03:15:14-0300 bastion01 sshd[5523]: Failed password for invalid user test from 198.51.100.23 port 47902 ssh2
+2026-09-19T03:15:21-0300 bastion01 sshd[3004]: Invalid user test from 198.51.100.23 port 35453
+2026-09-19T03:15:21-0300 bastion01 sshd[3004]: Failed password for invalid user test from 198.51.100.23 port 35453 ssh2
+2026-09-19T03:15:28-0300 bastion01 sshd[7635]: Invalid user postgres from 198.51.100.23 port 33735
+2026-09-19T03:15:28-0300 bastion01 sshd[7635]: Failed password for invalid user postgres from 198.51.100.23 port 33735 ssh2
+2026-09-19T03:15:35-0300 bastion01 sshd[2370]: Invalid user postgres from 198.51.100.23 port 53088
+2026-09-19T03:15:35-0300 bastion01 sshd[2370]: Failed password for invalid user postgres from 198.51.100.23 port 53088 ssh2
+2026-09-19T03:15:42-0300 bastion01 sshd[9258]: Invalid user postgres from 198.51.100.23 port 45972
+2026-09-19T03:15:42-0300 bastion01 sshd[9258]: Failed password for invalid user postgres from 198.51.100.23 port 45972 ssh2
+2026-09-19T03:15:49-0300 bastion01 sshd[8116]: Invalid user postgres from 198.51.100.23 port 40389
+2026-09-19T03:15:49-0300 bastion01 sshd[8116]: Failed password for invalid user postgres from 198.51.100.23 port 40389 ssh2
+2026-09-19T03:15:56-0300 bastion01 sshd[6950]: Invalid user postgres from 198.51.100.23 port 48417
+2026-09-19T03:15:56-0300 bastion01 sshd[6950]: Failed password for invalid user postgres from 198.51.100.23 port 48417 ssh2
+2026-09-19T03:16:03-0300 bastion01 sshd[4185]: Invalid user postgres from 198.51.100.23 port 41943
+2026-09-19T03:16:03-0300 bastion01 sshd[4185]: Failed password for invalid user postgres from 198.51.100.23 port 41943 ssh2
+2026-09-19T03:16:10-0300 bastion01 sshd[2974]: Invalid user ubuntu from 198.51.100.23 port 45097
+2026-09-19T03:16:10-0300 bastion01 sshd[2974]: Failed password for invalid user ubuntu from 198.51.100.23 port 45097 ssh2
+2026-09-19T03:16:17-0300 bastion01 sshd[3188]: Invalid user ubuntu from 198.51.100.23 port 56131
+2026-09-19T03:16:17-0300 bastion01 sshd[3188]: Failed password for invalid user ubuntu from 198.51.100.23 port 56131 ssh2
+2026-09-19T03:16:24-0300 bastion01 sshd[4541]: Invalid user ubuntu from 198.51.100.23 port 49298
+2026-09-19T03:16:24-0300 bastion01 sshd[4541]: Failed password for invalid user ubuntu from 198.51.100.23 port 49298 ssh2
+2026-09-19T03:16:31-0300 bastion01 sshd[3877]: Invalid user ubuntu from 198.51.100.23 port 62509
+2026-09-19T03:16:31-0300 bastion01 sshd[3877]: Failed password for invalid user ubuntu from 198.51.100.23 port 62509 ssh2
+2026-09-19T03:16:38-0300 bastion01 sshd[3598]: Failed password for jenkins from 198.51.100.23 port 60038 ssh2
+2026-09-19T03:16:45-0300 bastion01 sshd[4140]: Failed password for jenkins from 198.51.100.23 port 63225 ssh2
+2026-09-19T03:16:52-0300 bastion01 sshd[8431]: Failed password for jenkins from 198.51.100.23 port 37172 ssh2
+2026-09-19T03:16:59-0300 bastion01 sshd[5070]: Failed password for jenkins from 198.51.100.23 port 36465 ssh2
+2026-09-19T03:17:06-0300 bastion01 sshd[1324]: Failed password for jenkins from 198.51.100.23 port 38234 ssh2
+2026-09-19T03:17:13-0300 bastion01 sshd[8640]: Failed password for jenkins from 198.51.100.23 port 46004 ssh2
+2026-09-19T03:17:20-0300 bastion01 sshd[7337]: Failed password for jenkins from 198.51.100.23 port 59376 ssh2
+2026-09-19T03:17:27-0300 bastion01 sshd[6430]: Failed password for jenkins from 198.51.100.23 port 47129 ssh2
+2026-09-19T03:17:34-0300 bastion01 sshd[5705]: Failed password for jenkins from 198.51.100.23 port 34407 ssh2
+2026-09-19T03:17:41-0300 bastion01 sshd[3099]: Failed password for jenkins from 198.51.100.23 port 44022 ssh2
+2026-09-19T03:17:48-0300 bastion01 sshd[7198]: Failed password for jenkins from 198.51.100.23 port 49669 ssh2
+2026-09-19T03:17:55-0300 bastion01 sshd[2200]: Failed password for jenkins from 198.51.100.23 port 37406 ssh2
+2026-09-19T03:18:02-0300 bastion01 sshd[1170]: Failed password for jenkins from 198.51.100.23 port 45335 ssh2
+2026-09-19T03:18:09-0300 bastion01 sshd[1991]: Failed password for jenkins from 198.51.100.23 port 56665 ssh2
+2026-09-19T03:18:16-0300 bastion01 sshd[3166]: Failed password for jenkins from 198.51.100.23 port 61772 ssh2
+2026-09-19T03:18:23-0300 bastion01 sshd[1674]: Failed password for root from 198.51.100.23 port 60819 ssh2
+2026-09-19T03:18:30-0300 bastion01 sshd[8194]: Failed password for root from 198.51.100.23 port 63992 ssh2
+2026-09-19T03:18:37-0300 bastion01 sshd[2792]: Failed password for root from 198.51.100.23 port 46172 ssh2
+2026-09-19T03:18:44-0300 bastion01 sshd[3896]: Failed password for root from 198.51.100.23 port 47109 ssh2
+2026-09-19T03:18:51-0300 bastion01 sshd[4658]: Failed password for root from 198.51.100.23 port 63415 ssh2
+2026-09-19T03:18:58-0300 bastion01 sshd[2050]: Failed password for root from 198.51.100.23 port 49791 ssh2
+2026-09-19T03:19:05-0300 bastion01 sshd[5773]: Failed password for root from 198.51.100.23 port 51263 ssh2
+2026-09-19T03:19:12-0300 bastion01 sshd[1181]: Failed password for root from 198.51.100.23 port 52844 ssh2
+2026-09-19T03:41:02-0300 bastion01 sshd[4120]: error: maximum authentication attempts exceeded for jenkins from 198.51.100.23 port 44190 ssh2 [preauth]
+2026-09-19T03:41:02-0300 bastion01 sshd[4120]: Disconnecting authenticating user jenkins 198.51.100.23 port 44190: Too many authentication failures [preauth]
+2026-09-19T04:02:40-0300 bastion01 sshd[2198]: Failed password for jenkins from 203.0.113.77 port 61750 ssh2
+2026-09-19T04:02:45-0300 bastion01 sshd[6315]: Failed password for jenkins from 203.0.113.77 port 42292 ssh2
+2026-09-19T04:02:50-0300 bastion01 sshd[8386]: Failed password for jenkins from 203.0.113.77 port 38269 ssh2
+2026-09-19T04:02:55-0300 bastion01 sshd[6773]: Failed password for jenkins from 203.0.113.77 port 50135 ssh2
+2026-09-19T04:03:00-0300 bastion01 sshd[5492]: Failed password for jenkins from 203.0.113.77 port 46221 ssh2
+2026-09-19T04:03:05-0300 bastion01 sshd[4607]: Failed password for jenkins from 203.0.113.77 port 40114 ssh2
+2026-09-19T04:03:10-0300 bastion01 sshd[8695]: Failed password for jenkins from 203.0.113.77 port 37879 ssh2
+2026-09-19T04:03:15-0300 bastion01 sshd[3645]: Failed password for jenkins from 203.0.113.77 port 49277 ssh2
+2026-09-19T04:03:20-0300 bastion01 sshd[7722]: Failed password for jenkins from 203.0.113.77 port 47267 ssh2
+2026-09-19T04:03:25-0300 bastion01 sshd[3813]: Failed password for jenkins from 203.0.113.77 port 33766 ssh2
+2026-09-19T04:03:30-0300 bastion01 sshd[8843]: Failed password for jenkins from 203.0.113.77 port 54209 ssh2
+2026-09-19T04:03:35-0300 bastion01 sshd[7464]: Failed password for jenkins from 203.0.113.77 port 58672 ssh2
+2026-09-19T04:03:40-0300 bastion01 sshd[7729]: Failed password for jenkins from 203.0.113.77 port 50922 ssh2
+2026-09-19T04:03:45-0300 bastion01 sshd[4894]: Failed password for jenkins from 203.0.113.77 port 61354 ssh2
+2026-09-19T04:03:50-0300 bastion01 sshd[5591]: Failed password for jenkins from 203.0.113.77 port 46842 ssh2
+2026-09-19T04:03:55-0300 bastion01 sshd[6272]: Failed password for jenkins from 203.0.113.77 port 61813 ssh2
+2026-09-19T04:04:00-0300 bastion01 sshd[2719]: Failed password for jenkins from 203.0.113.77 port 53522 ssh2
+2026-09-19T04:04:05-0300 bastion01 sshd[2800]: Failed password for jenkins from 203.0.113.77 port 48047 ssh2
+2026-09-19T04:04:10-0300 bastion01 sshd[5290]: Failed password for jenkins from 203.0.113.77 port 35765 ssh2
+2026-09-19T04:04:15-0300 bastion01 sshd[1878]: Failed password for jenkins from 203.0.113.77 port 43326 ssh2
+2026-09-19T04:04:20-0300 bastion01 sshd[2280]: Failed password for jenkins from 203.0.113.77 port 33562 ssh2
+2026-09-19T04:04:25-0300 bastion01 sshd[2799]: Failed password for jenkins from 203.0.113.77 port 53377 ssh2
+2026-09-19T04:04:30-0300 bastion01 sshd[4570]: Failed password for jenkins from 203.0.113.77 port 34241 ssh2
+2026-09-19T04:04:35-0300 bastion01 sshd[2838]: Failed password for jenkins from 203.0.113.77 port 48830 ssh2
+2026-09-19T04:04:40-0300 bastion01 sshd[7105]: Failed password for jenkins from 203.0.113.77 port 59713 ssh2
+2026-09-19T04:04:45-0300 bastion01 sshd[1515]: Failed password for jenkins from 203.0.113.77 port 38616 ssh2
+2026-09-19T04:04:50-0300 bastion01 sshd[3373]: Failed password for jenkins from 203.0.113.77 port 43571 ssh2
+2026-09-19T04:04:55-0300 bastion01 sshd[3541]: Failed password for jenkins from 203.0.113.77 port 36984 ssh2
+2026-09-19T04:05:00-0300 bastion01 sshd[3804]: Failed password for jenkins from 203.0.113.77 port 38348 ssh2
+2026-09-19T04:05:05-0300 bastion01 sshd[2802]: Failed password for jenkins from 203.0.113.77 port 56735 ssh2
+2026-09-19T04:05:10-0300 bastion01 sshd[3359]: Failed password for root from 203.0.113.77 port 56190 ssh2
+2026-09-19T04:05:15-0300 bastion01 sshd[8718]: Failed password for root from 203.0.113.77 port 56488 ssh2
+2026-09-19T04:05:20-0300 bastion01 sshd[7956]: Failed password for root from 203.0.113.77 port 63612 ssh2
+2026-09-19T04:05:25-0300 bastion01 sshd[7080]: Failed password for root from 203.0.113.77 port 60879 ssh2
+2026-09-19T04:05:30-0300 bastion01 sshd[8699]: Failed password for root from 203.0.113.77 port 34497 ssh2
+2026-09-19T04:05:35-0300 bastion01 sshd[2598]: Failed password for root from 203.0.113.77 port 53311 ssh2
+2026-09-19T04:05:40-0300 bastion01 sshd[1925]: Failed password for root from 203.0.113.77 port 58821 ssh2
+2026-09-19T04:05:45-0300 bastion01 sshd[2920]: Failed password for root from 203.0.113.77 port 60906 ssh2
+2026-09-19T04:05:50-0300 bastion01 sshd[9185]: Failed password for root from 203.0.113.77 port 33315 ssh2
+2026-09-19T04:05:55-0300 bastion01 sshd[1510]: Failed password for root from 203.0.113.77 port 45820 ssh2
+2026-09-19T04:06:00-0300 bastion01 sshd[3785]: Failed password for root from 203.0.113.77 port 45848 ssh2
+2026-09-19T04:06:05-0300 bastion01 sshd[4471]: Failed password for root from 203.0.113.77 port 37794 ssh2
+2026-09-19T04:06:10-0300 bastion01 sshd[1931]: Failed password for root from 203.0.113.77 port 34395 ssh2
+2026-09-19T04:06:15-0300 bastion01 sshd[3597]: Failed password for root from 203.0.113.77 port 33551 ssh2
+2026-09-19T04:06:20-0300 bastion01 sshd[1880]: Failed password for root from 203.0.113.77 port 39057 ssh2
+2026-09-19T04:09:55-0300 bastion01 sshd[5210]: Connection closed by authenticating user root 203.0.113.77 port 39120 [preauth]
+2026-09-19T05:15:00-0300 bastion01 sshd[8569]: Failed password for jenkins from 203.0.113.12 port 48580 ssh2
+2026-09-19T05:15:41-0300 bastion01 sshd[6597]: Failed password for jenkins from 203.0.113.12 port 42551 ssh2
+2026-09-19T05:16:22-0300 bastion01 sshd[4072]: Failed password for jenkins from 203.0.113.12 port 36952 ssh2
+2026-09-19T05:17:03-0300 bastion01 sshd[6280]: Failed password for jenkins from 203.0.113.12 port 56886 ssh2
+2026-09-19T05:17:44-0300 bastion01 sshd[1443]: Failed password for jenkins from 203.0.113.12 port 63758 ssh2
+2026-09-19T05:18:25-0300 bastion01 sshd[7258]: Failed password for jenkins from 203.0.113.12 port 48761 ssh2
+2026-09-19T05:19:06-0300 bastion01 sshd[4043]: Failed password for jenkins from 203.0.113.12 port 48069 ssh2
+2026-09-19T05:19:47-0300 bastion01 sshd[8580]: Failed password for jenkins from 203.0.113.12 port 53114 ssh2
+2026-09-19T05:20:28-0300 bastion01 sshd[3059]: Failed password for jenkins from 203.0.113.12 port 59430 ssh2
+2026-09-19T05:21:09-0300 bastion01 sshd[5781]: Failed password for jenkins from 203.0.113.12 port 45367 ssh2
+2026-09-19T05:21:50-0300 bastion01 sshd[9392]: Failed password for jenkins from 203.0.113.12 port 45577 ssh2
+2026-09-19T05:22:31-0300 bastion01 sshd[3683]: Failed password for jenkins from 203.0.113.12 port 57856 ssh2
+2026-09-19T05:23:12-0300 bastion01 sshd[1573]: Failed password for root from 203.0.113.12 port 55717 ssh2
+2026-09-19T05:23:53-0300 bastion01 sshd[4079]: Failed password for root from 203.0.113.12 port 43542 ssh2
+2026-09-19T05:24:34-0300 bastion01 sshd[1670]: Failed password for root from 203.0.113.12 port 39128 ssh2
+2026-09-19T05:25:15-0300 bastion01 sshd[5040]: Failed password for root from 203.0.113.12 port 38340 ssh2
+2026-09-19T05:25:56-0300 bastion01 sshd[7928]: Failed password for root from 203.0.113.12 port 54031 ssh2
+2026-09-19T05:26:37-0300 bastion01 sshd[3698]: Failed password for root from 203.0.113.12 port 44703 ssh2
+2026-09-19T05:27:18-0300 bastion01 sshd[6253]: Failed password for root from 203.0.113.12 port 60764 ssh2
+2026-09-19T05:27:59-0300 bastion01 sshd[9511]: Failed password for root from 203.0.113.12 port 44596 ssh2
+2026-09-19T06:30:01-0300 bastion01 sshd[9523]: Connection closed by 192.0.2.50 port 46085 [preauth]
+2026-09-19T06:33:12-0300 bastion01 sshd[3661]: Connection closed by 192.0.2.50 port 53755 [preauth]
+2026-09-19T06:36:44-0300 bastion01 sshd[1545]: Connection closed by 192.0.2.50 port 61970 [preauth]
+2026-09-19T06:38:02-0300 bastion01 sshd[6601]: fatal: Timeout before authentication for 192.0.2.50 port 41220
+2026-09-19T07:50:12-0300 bastion01 sshd[8315]: Failed password for lgomez from 10.0.10.15 port 42858 ssh2
+2026-09-19T07:50:41-0300 bastion01 sshd[6884]: Failed password for lgomez from 10.0.10.15 port 49134 ssh2
+2026-09-19T07:51:30-0300 bastion01 sshd[7702]: Accepted publickey for lgomez from 10.0.10.15 port 52210 ssh2: ED25519 SHA256:REDACTADO
+2026-09-19T08:02:14-0300 bastion01 sshd[8120]: Accepted publickey for sre from 10.0.10.4 port 53114 ssh2: ED25519 SHA256:REDACTADO
+2026-09-19T08:02:14-0300 bastion01 sshd[8120]: pam_unix(sshd:session): session opened for user sre(uid=1005)
+2026-09-19T08:03:01-0300 bastion01 sudo[8140]: sre : TTY=pts/0 ; PWD=/home/sre ; USER=root ; COMMAND=/usr/sbin/sshd -t
+2026-09-19T08:03:01-0300 bastion01 sshd[8145]: /etc/ssh/sshd_config.d/99-lab.conf line 7: Deprecated option not detected, config test OK
+2026-09-19T08:04:20-0300 bastion01 sudo[8160]: sre : TTY=pts/0 ; PWD=/home/sre ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --since 03:00 --no-pager
+2026-09-19T08:12:05-0300 bastion01 sshd[8120]: pam_unix(sshd:session): session closed for user sre
